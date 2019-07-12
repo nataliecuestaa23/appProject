@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="ipad12_9rounded" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="storyboradPractice" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textField opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="April's Issue" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="dwe-2a-MxO">
+                                <rect key="frame" x="403" y="374" width="886" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="18"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Bwf-C7-Eoy">
+                                <rect key="frame" x="0.0" y="28" width="1024" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="i9U-aY-QNo">
+                                        <barButtonItem key="leftBarButtonItem" systemItem="refresh" id="o32-yf-lUm"/>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="bQ9-xC-Cin"/>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="cover-high-res_b" translatesAutoresizingMaskIntoConstraints="NO" id="SGH-nD-1t2">
+                                <rect key="frame" x="-73" y="770" width="1186" height="660"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="SGH-nD-1t2" secondAttribute="height" multiplier="187:97" id="sCT-mF-w9f"/>
+                                    <constraint firstAttribute="width" secondItem="SGH-nD-1t2" secondAttribute="height" multiplier="724:299" id="yvb-9x-9dh"/>
+                                </constraints>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="07-kim-kardashian-west-vogue-cover-may-2019" translatesAutoresizingMaskIntoConstraints="NO" id="Jby-Kk-JsL">
+                                <rect key="frame" x="66" y="87" width="908" height="623"/>
+                                <gestureRecognizers/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="Jby-Kk-JsL" secondAttribute="height" multiplier="408:293" id="LbZ-bv-2Rt"/>
+                                </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="4ik-gF-37j" appends="YES" id="Xkg-k8-IhM"/>
+                                </connections>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="May's Issue" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="o7e-36-6nV">
+                                <rect key="frame" x="285" y="718" width="704" height="22"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="SGH-nD-1t2" secondAttribute="trailing" constant="50" id="7ge-fR-4tY"/>
+                            <constraint firstItem="o7e-36-6nV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="EqV-x6-HAn"/>
+                            <constraint firstItem="Jby-Kk-JsL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="I4H-gj-w2W"/>
+                            <constraint firstItem="SGH-nD-1t2" firstAttribute="top" secondItem="dwe-2a-MxO" secondAttribute="bottom" constant="8" id="OFq-vP-K2v"/>
+                            <constraint firstItem="SGH-nD-1t2" firstAttribute="top" secondItem="dwe-2a-MxO" secondAttribute="bottom" constant="17" id="SbM-CO-a2e"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="o7e-36-6nV" secondAttribute="trailing" constant="240" id="U5g-GH-eIw"/>
+                            <constraint firstItem="Jby-Kk-JsL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="45" id="aWN-B0-5AH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="SGH-nD-1t2" secondAttribute="bottom" constant="45" id="ca6-3Z-ewb"/>
+                            <constraint firstItem="SGH-nD-1t2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" constant="50" id="dzN-Uq-bu2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jby-Kk-JsL" secondAttribute="trailing" constant="36" id="eH2-9v-fRF"/>
+                            <constraint firstItem="Jby-Kk-JsL" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="19" id="fmX-zK-EH1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dwe-2a-MxO" secondAttribute="trailing" constant="68" id="g5h-jI-fQy"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SGH-nD-1t2" secondAttribute="trailing" constant="150" id="lwy-3e-mCK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Jby-Kk-JsL" secondAttribute="trailing" constant="50" id="nVn-8h-PRl"/>
+                            <constraint firstItem="SGH-nD-1t2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="wKm-DX-qFU"/>
+                            <constraint firstItem="dwe-2a-MxO" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="70" id="yx0-Ft-C0Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems>
+                        <barButtonItem systemItem="bookmarks" id="1Is-xP-vei"/>
+                    </toolbarItems>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <rotationGestureRecognizer id="4ik-gF-37j"/>
+            </objects>
+            <point key="canvasLocation" x="137.109375" y="118.15519765739384"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="07-kim-kardashian-west-vogue-cover-may-2019" width="1020" height="1339"/>
+        <image name="cover-high-res_b" width="320" height="434"/>
+    </resources>
+</document>
